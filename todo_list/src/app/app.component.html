@@ -10,3 +10,8 @@
   <li>{{item.name}} <button (click)="removeTask(item.id)">Remove</button></li> 
 
 </ul>
+
+
+<h1>{{title1}}</h1>
+<app-child [item]="data"></app-child>
+<button (click)="updateChild()">Update Child Component</button>
