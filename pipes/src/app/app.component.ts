@@ -6,12 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Two Way Binding';
-  title1 = 'Template Reference Variable'
-  name:any;
+  title = 'Angular Pipes';
+  today = Date();
 
-  getVal(item:any)
+// With using pipe  
+  capString(item:string)
   {
-    console.warn(item)
+    return item.toUpperCase();
+  }
+  user={
+    name:'Sam',
+    age:22
   }
 }
