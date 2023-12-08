@@ -8,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ChildComponent implements OnInit {
 
   constructor() { }
-@ Input() item = 0;
+// @Input() item: any = 0;
+@ Input() item:{name:string, email:string} = {name:'', email:''};
+
 
   ngOnInit(): void {
   }

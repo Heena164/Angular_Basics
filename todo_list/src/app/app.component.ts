@@ -9,6 +9,13 @@ export class AppComponent {
   title = 'Todo List';
   title1 = 'Send Data Parent to Child Component'
   data = 10
+  title2 = "Reusable Component"
+  userDetails = [
+    {name:"Anam", email:"anam@gmail.com"},
+    {name:"Sid", email:"sid@gmail.com"},
+    {name:"Sam", email:"sam@gmail.com"},
+
+  ] 
   list:any[] = [];
   addTask(item:string)
   {
@@ -24,4 +31,5 @@ export class AppComponent {
   updateChild(){
     this.data = Math.floor(Math.random() * 10)
   }
+  
 }
