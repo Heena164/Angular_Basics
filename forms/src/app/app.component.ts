@@ -20,10 +20,10 @@ export class AppComponent {
     console.warn(item)
   }
 
-  loginUser()
-  {
-    console.warn(this.loginForm.value)
-  }
+  // loginUser()
+  // {
+  //   console.warn(this.loginForm.value)
+  // }
 
   get user()
   {

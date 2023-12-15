@@ -4,11 +4,23 @@ import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { NoPageComponent } from './no-page/no-page.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 const routes: Routes = [
   {
     component:AboutComponent,
-    path:'about'
+    path:'about',
+    children:[
+      {
+        path:'comapny',
+        component:AboutCompanyComponent
+      },
+      {
+        path:'me',
+        component:AboutMeComponent
+      }
+    ]
   },
   {
     component:UserComponent,
